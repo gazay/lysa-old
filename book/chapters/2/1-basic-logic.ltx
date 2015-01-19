@@ -1,27 +1,27 @@
-\s{Basic Logic}\label{2.1-basic-logic}
+\s{Базовая логика}\label{2.1-basic-logic}
 
-\ss{True and False}
+\ss{True и False}
 
-True or False - in your education, you've been faced with questions where the
-answer is ``True'' or ``False''? Well, hopefully the answer is ``True''. In
-math, we're going to deal with things where we have to decide whether something
-is true or not. Moreover, there are going to be a bunch of statements that may
-or may not be true, and we'll have to figure out how they relate to each
-other. With that in mind, this section has some rules for dealing with truth and
-falsehood.
+``Правда`` или ``Ложь`` – что за время вашего обучения
+вы сталкивались с вопросами, ответами на которые были ``Правда`` или ``Ложь``?
+Ну, надеюсь, ответ ``Правда``. В математике мы будем иметь дело с задачами,
+где нам нужно будет решить, что нечто является правдой или нет. Более того,
+мы встретим кучу выражений, которые могут быть или не быть правдой, и нам нужно будет
+понять, как они связаны друг с другом. Помните об этом, пока читаете этот раздел,
+в нем представлены некоторые правила о том, как иметь дело с правдой и ложью. ???
 
-We're going to create two ``values'', and they are called \truenm\ and \falsenm,
-respectively. These values are called ``Booleans''. They are named after a
-mathematician named George Boole, who studied them rather extensively.
+Мы создадим два ``значения`` и назовем их \truenm\ и \falsenm соответственно.
+Эти значения называются ``Булевы''. Они названы вчесть математика Джорджа Буля,
+который изучал их довольно много.
 
-\truenm\ and \falsenm\ are not very interesting on their own. However, when we
-have a bunch of things that are either \truenm\ or \falsenm, we can combine them
-together in three basic ways:
+\truenm\ и \falsenm\ не очень интересны сами по себе. Но когда у нас есть куча
+вещей которые являются \truenm\ или \falsenm, мы можем комбинировать их вместе
+тремя основными способами:
 
-\begin{itemize}  
-\item $A \land B$ should be read as ``$A$ logical-and $B$.'' Both have to be
-  \truenm. If one of them is \falsenm, than $A \land B$ is \falsenm. Likewise,
-  if $A$ and $B$ are both \truenm, then $A \land B$ is \truenm.
+\begin{itemize}
+\item $A \land B$ нужно читать как ``$A$ логическое-и $B$.'' Оба должны быть \truenm.
+  Если один из них \falsenm, значит $A \land B$ является \falsenm. Таким образом,
+  если $A$ и $B$ оба \truenm, тогда $A \land B$ является \truenm.
 
 \item $A \lor B$ should be read as ``$A$ logical-or $B$.'' With $A \lor B$, if
   one of $A$ and $B$ is \truenm, then $A \lor B$ is \truenm. It's okay if both
@@ -30,7 +30,7 @@ together in three basic ways:
   writing that out each time, I'm instead going to use the symbol $\lnot$. So,
   $\lnot A$ should be read `logical-not $A$'.
 
-\end{itemize}  
+\end{itemize}
 
 \ss{Logic}
 
@@ -73,7 +73,7 @@ statement is $\forall A,B,C \ldots$
 
 \begin{itemize}
 \item Alright, time for some notation:
-  
+
   \[\forall A,B,C \semicolon \parens{\parens{A \implies B} \land \parens{B \implies C}}
   \implies \parens{A \implies C} \]
 
@@ -177,7 +177,7 @@ when evaluated, happen to be \truenm\ or \falsenm.
     \[ \parens{A \implies B} \implies \parens{\lnot A \impliedby \lnot B} \sfall A,B \]
 
     Is the following true?
-    
+
     \[ \parens{A \implies B} \iff \parens{\lnot A \impliedby \lnot B} \sfall A,B \]
 
     In the future, I won't put ``is the following true\ldots'', mostly because
